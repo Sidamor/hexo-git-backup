@@ -110,6 +110,26 @@ tags:
 	hexo deploy
 ```
 依次为 清除、生成、上传
+deploy如果失败，运行
+```bash
+Error Code: ERROR Deployer not found: git
+Run: npm install --save hexo-deployer-git
+```
+
+## Hexo 源文件&主题 备份
+安装hexo-git-backup
+```bash
+npm install --save hexo-git-backup
+```
+同时需要在_config.yml中添加：
+```yml
+backup:
+    type: git
+    theme: TKL
+    repository:
+       github: git@github.com:Sidamor/hexo-git-backup.git
+```
+
 
 ## 更换主题
 1. 下载你的主题到本地
@@ -128,7 +148,7 @@ tags:
 解决方案：CodeFalling/hexo-asset-image 
 1. 首先确认 _config.yml 中有 post_asset_folder:true 。 
 2. 在 hexo 目录，执行
-	npm install https://github.com/CodeFalling/hexo-asset-image --save
+	npm install hexo-asset-image --save
 3. 在source/_post中，找到文章md所在目录，建立文章同名目录，将图片放入新建目录中。
 4. 只要使用
 ```bash
