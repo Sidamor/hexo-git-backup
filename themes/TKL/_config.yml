@@ -1,0 +1,42 @@
+# config
+cover: /img/bg_img.jpg
+logo: /img/logo.png
+top_saying:
+- title: 
+- content: 
+bottom_saying: dear
+
+# Content
+excerpt_link: Read More
+
+#RSS
+
+highlightjs: vs
+
+#Works
+
+#duoshuo name
+duoshuo:
+
+#disqus name
+disqus_shortname:
+
+#fancybox
+fancybox: true
+
+# Miscellaneous
+github: https://github.com/Sidamor
+weibo: http://weibo.com/si5d
+instagram: https://www.instagram.com/starlv
+
+#about  
+
+#timeline
+timeline:
+- num: 1
+  word: 2017/01/06-Start
+
+#Links
+links:
+- name: Kieran
+  link: http://go.kieran.top/
