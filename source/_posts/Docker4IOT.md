@@ -30,7 +30,7 @@ Docker在Linux容器（LXCs）的顶层，提供了“用户友好”的一层�
 
 过去，我们使用以下方式启动"SingleProvider"单一提供商版本的服务。所有代码在Cassandra的分布式框架下都很难部署。
 
-![单一提供商架构](Docker4IOT/Pre_Sche.png) 
+![单一提供商架构](Pre_Sche.png) 
 
 # Our New Approach
 尽管Docker是一个有趣的新兴技术容器，它仍然处于发展的初级阶段。正如预期的那样，它有尚待解决的问题。对于我们来说，最大的问题是，Docker不能支持在一台机器上运行多个Cassandra 实例。因此，我们不能使用Cassandra 提供“multi-tenancy”技术。我们的另一个问题是，在一台机器上托管多个数据库实例会迅速造成资源短缺。
@@ -46,7 +46,7 @@ Docker在Linux容器（LXCs）的顶层，提供了“用户友好”的一层�
 
 # How We Did It - Multi Tenant Database Architecture
 
-![多提供商架构](Docker4IOT/Now_Sche.jpg) 
+![多提供商架构](Now_Sche.jpg) 
 
 1. 创建一个Docker容器，设置了对应的环境和依赖关系。
 2. 启动一个Cassandra的容器。

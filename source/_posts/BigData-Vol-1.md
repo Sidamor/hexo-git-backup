@@ -28,7 +28,7 @@ Sixth : Value
 * Process
 * Platform
 * Programmability
-![5P](BigData-Vol-1/5P.png) 
+![5P](5P.png) 
 
 # Hadoop EcoSystem
 * HDFS:
@@ -50,20 +50,20 @@ Sixth : Value
      HBase; Cassandra; MongoDB
 * Zookeeper: management
      Synchronization; Configuration; High-availability
-![Hadoop-Eco](BigData-Vol-1/Hadoop-Eco.png) 
+![Hadoop-Eco](Hadoop-Eco.png) 
 
 ## HDFS 
 NameNode&DataNode
-![NameNode&DataNode](BigData-Vol-1/NameNode&DataNode.png) 
+![NameNode&DataNode](NameNode&DataNode.png) 
 
 ## YARN(Yet Another Resource Negotiator)
 The Resource Manager for Hadoop
-![YARN](BigData-Vol-1/YARN.png) 
+![YARN](YARN.png) 
 	
 ## MapReduce
 Map = apply operation to all Elements   计算
 Reduce = summarize operation on Elements 总结
-![MapReduce](BigData-Vol-1/MapReduce.png) 
+![MapReduce](MapReduce.png) 
 
 ## Hadoop CAUTION！
 * Small Datasets	太小
@@ -73,4 +73,4 @@ Reduce = summarize operation on Elements 总结
 * Random Data Access
 
 ## CloudComputing
-![CloudComput](BigData-Vol-1/CloudComput.png) 
+![CloudComput](CloudComput.png) 

@@ -21,7 +21,7 @@ Hadoop的简单部署，以及HelloWorld程序运行。
 * 注意：WIN10系统可能需要在WINDOWS功能中禁用Hyper X，以解决和VT-X冲突的问题。
 * 启动完成
 第一次启动可能需要等待较长时间，可以在虚拟机中切换查看后台，正常运行等待即可。
-![Cloudera](BigData-Vol-2/Cloudera.png)
+![Cloudera](Cloudera.png)
 
 # Copy ur data to the HDFS
 1. 在浏览器中下载需要被计算的WordCount文件  [t8.shakespeare.txt](http://ocw.mit.edu/ans7870/6/6.006/s08/lecturenotes/files/t8.shakespeare.txt)

@@ -11,7 +11,7 @@ tags:
 
 <!--more-->
 
-![framework](bsd_iot_framework/framework.png)
+![framework](framework.png)
 
 # 用户端
 用户使用场景

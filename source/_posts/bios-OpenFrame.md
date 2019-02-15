@@ -394,3 +394,17 @@ Accept: application/json
   "callbackUri": "https://ip:port/eventRcv"
 }
 ```
+
+
+## 调用上报
+
+作为操作系统，bios需要知道每一条PSE被调用的情况。
+
+服务提供商需要在每一次成功提供服务之后向bios的消息队列提交一条消息，消息体结构如下
+
+```json
+{
+  "type":"Property/Service/Event",
+  "link":"https://$productLink$/api"
+}
+```
