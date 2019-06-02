@@ -384,6 +384,41 @@ thingjs提供了campusbuilder（模模搭），完美贴合thingjs。
 多方面比较，选择thingjs
 
 ## 逻辑
+
+### 模型加载
+* 建模和编码剥离
+* 通过campusbuilder搭建的园区，包括所有的模型，一次性加载。
+
+```
+var app = new THING.App({
+    // 自定义面板
+    "el": "div3d",
+    //背景设置
+    "skyBox": sceneSkyBox,
+    "background": sceneBackGround,
+    complete: function() {
+        app.create({
+            type: "Campus",
+            url: sceneUrl,
+            visible: false,
+            complete: function (ev) {
+                init(); //初始化
+                ev.object.visible = true;
+                callFuncInMain('initNotify', '');
+            }
+        });
+    }
+});
+```
+
+### 物体查找
+query函数
+* app.query 在全局范围内查找对象
+* 此外，Campus\Building\Floor都可以使用.query查找此父阶段范围内的对象
+* query函数返回的是一个数组（不管几个），在获取单个对象的时候需要加下标[0]
+
+
+### 层级切换
 thingjs成熟的园区逻辑包含以下几层：
 * Campus
 * Building
@@ -553,11 +588,6 @@ globals.camera_focus
     "time": 500
 }, 
 ```
-
-## query函数
-* app.query 在全局范围内查找对象
-* 此外，Campus\Building\Floor都可以使用.query查找此父阶段范围内的对象
-* query函数返回的是一个数组（不管几个），在获取单个对象的时候需要加下标[0]
 
 ## 暂停默认事件
 所有自定义过的事件，都需要暂停其默认事件
