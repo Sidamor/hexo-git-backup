@@ -105,6 +105,8 @@ Ubuntu下编译步骤：
 
 * 服务器安装ffmpeg环境，java代码可以命令行调用ffmpeg，对于指定rtsp进行转码，推送到nginx指定地址。指定rtsp及指定nginx地址由平台进行配置。
 
+* nginx+rtmp示例 `链接：https://pan.baidu.com/s/1sjiKr85jbRUjgqsrhORgQA 提取码：28yw `
+
 * 当前端发起一个预览请求，后端起一个ffmpeg实例，进行转码。同时，前端取指定rtmp地址获取转码后的视频流。
 
 * java执行ffmpeg命令使用开源项目[FFCH4J](https://github.com/eguid/FFCH4J)
@@ -138,7 +140,7 @@ Ubuntu下编译步骤：
 ```
 
 
-* HLS，文件切片，延迟>30S    
+* HLS，文件切片播放，延迟由切片大小决定，10s以上
 `ffmpeg -i rtsp://admin1:abc123456@10.30.30.100:554/cam/realmonitor?channel=1&subtype=0 -vcodec libx264 -codec:a libfaac -map 0 -f hls -hls_time 10 playlist.m3u8`
 
 
