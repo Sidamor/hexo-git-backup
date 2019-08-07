@@ -8,7 +8,6 @@ tags:
 - API网关
 - 单点登陆
 - 功能权限
-- 数据权限
 ---
 
 # 私有云api网关
@@ -43,6 +42,10 @@ tags:
 
 ## API网关
 
+[为服务网格选择入口网关](https://www.servicemesher.com/istio-handbook/best-practices/how-to-implement-ingress-gateway.html)
+ApiGateway + Sidecar Proxy
+
+
 1. 所有服务注册（不论集群内部还是外部），api网关提供（权限中心）接口发放appKey&appSecret
 2. k8s内的服务间调用，采用k8s自带的监控体系
 3. k8s外服务调用私有云的服务，通过api网关进行调用监控
@@ -68,5 +71,16 @@ tags:
 * k8s外的服务被调用，向api网关发起鉴权请求
 
 
+### 功能权限
 
+* 每个业务系统/应用，注册时需要配置功能权限list回调地址
+* 权限系统在做配置时，从回调地址获取权限list
+* 配置完成后，入库保存
 
+### 数据权限
+
+*数据权限根据每个业务模块单独配置（因为每个业务模块的数据权限维度都不相同）*
+
+* 每一个业务模块，注册的时候需要配置数据权限list回调地址
+* 权限系统在做配置时，从回调地址获取权限list
+* 配置完成后，入库保存
