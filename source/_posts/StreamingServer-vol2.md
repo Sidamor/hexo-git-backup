@@ -36,7 +36,7 @@ tags:
 
 |       功能       | nginx-http-flv-module | nginx-rtmp-module |                  备注                  |
 | :--------------: | :-------------------: | :---------------: | :------------------------------------: |
-| HTTP-FLV (播放)  |           √           |         x         |        支持HTTPS-FLV和chunked回复      | 
+| HTTP-FLV (播放)  |           √           |         x         |        支持HTTPS-FLV和chunked回复      |
 |     GOP缓存      |           √           |         x         |                                        |
 |     虚拟主机     |           √           |         x         |                                        |
 | 省略`listen`配置 |           √           |       见备注      |        配置中必须有一个`listen`        |
@@ -245,6 +245,28 @@ PS
 
 PPS
 现在的直播延迟有点大(10s+)，ffmpeg的转码效率应该可以进行优化，待研究。
+
+
+## ffmpeg最新版安装 
+
+[centos下]https://trac.ffmpeg.org/wiki/CompilationGuide/Centos
+
+
+
+
+## 参数调优
+
+1. 码流类型subtype可以选择子码流，速度大大加快
+2. 开启x264的 -preset fast/faster/verfast/superfast/ultrafast参数
+3. 使用-tune zerolatency 参数
+4. 码率控制，官方推荐-b和-bufsize搭配使用  -b:v 2000k -bufsize 2000k
+
+
+当前最优参数（3-5s延迟）
+```bash
+ffmpeg -i "rtsp://admin:abc123456@hua@10.30.30.109:554/cam/realmonitor?channel=1&subtype=1" -tune zerolatency -vcodec libx264 -preset ultrafast -acodec aac -f flv rtmp://192.168.10.36:1935/myapp/home
+```
+
 
 
 # 播放端
