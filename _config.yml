@@ -72,8 +72,8 @@ deploy:
  repo: https://github.com/Sidamor/Sidamor.github.io.git
  branch: master
  
- 
 backup:
     type: git
     theme: TKL
-    repository: git@github.com:Sidamor/hexo-git-backup.git
+    repository:
+       origin: git@github.com:Sidamor/hexo-git-backup.git
