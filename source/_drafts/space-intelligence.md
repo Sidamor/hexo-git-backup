@@ -1,0 +1,45 @@
+---
+title: 空间智能化
+date: 2024-10-12 10:21:43
+categories: 
+- IOT
+tags:
+- Tuya
+- AI
+- Spatial Intelligence
+---
+# 具身智能 & 空间智能化
+具身智能最近大热，空间智能化也频频被提及。先来讲一下他们之间的关联。
+## 具身智能
+具身智能三大要素：传感、大模型、机体执行器
+
+目前国内外，说到具身智能，大家目光主要都放在执行器上。但是我认为，传感、大模型这两项，也同样重要（甚至更为重要）
+
+执行器虽然酷炫，但它也仅仅解决了最终命令的执行。所谓“智能化”，更考验对于周边环境的感知、理解、分析、判断。而这些，则需要传感、大模型这两者不断“进化“才能做到
+
+## 空间智能化
+再来谈谈空间智能化，为什么它会跟大火的具身智能一起被提及呢。首先，我们来看一下空间智能化的定义。
+
+先来看一下李飞飞 TED 演讲
+With Spatial Intelligence, AI Will Understand the Real World | Fei-Fei Li | TED
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=1654985070&bvid=BV1j7421Z74e&cid=1552780432&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+
+从这次 TED 演讲可以知道，李博士这次创业旨在具身智能。同时，如此看重 Spatial Intelligence，也表明了传感&大模型在具身智能中的重要性。
+
+# 漫谈空间智能化
+在之前的视频中，李博士反复提到了：处理视觉数据、做出预测并根据这些预测采取行动的能力。然而在现实世界中，我们获取空间下数据的方式，也并非仅仅通过视觉数据。仅仅是通过视觉上去获取空间三维中的所有信息，在目前看来算力成本也还是过于昂贵，无法应用到更广泛的空间中去。那么，有没有什么途径可以解决呢？
+
+1. 其他传感
+2. 固定场景下的条件预设
+
+循序渐进地，我认为空间智能化可以分为以下几个阶段
+
+## 第一阶段 Specific Devices
+
+
+
+## 第二阶段 Specific Scenes
+
+
+
+## 第三阶段 GPT Scenes
