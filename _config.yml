@@ -76,5 +76,4 @@ deploy:
 backup:
     type: git
     theme: TKL
-    repository:
-       github: git@github.com:Sidamor/hexo-git-backup.git
+    repository: git@github.com:Sidamor/hexo-git-backup.git
