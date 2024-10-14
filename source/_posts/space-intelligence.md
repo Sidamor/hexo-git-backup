@@ -22,7 +22,11 @@ tags:
 
 先来看一下李飞飞 TED 演讲
 With Spatial Intelligence, AI Will Understand the Real World | Fei-Fei Li | TED
-<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=1654985070&bvid=BV1j7421Z74e&cid=1552780432&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+<iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+        src="//player.bilibili.com/player.html?isOutside=true&aid=1654985070&bvid=BV1j7421Z74e&cid=1552780432&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true">
+</iframe>
+</div>
 
 从这次 TED 演讲可以知道，李博士这次创业旨在具身智能。同时，如此看重 Spatial Intelligence，也表明了传感&大模型在具身智能中的重要性。
 
